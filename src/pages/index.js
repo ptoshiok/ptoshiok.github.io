@@ -75,7 +75,7 @@ const Home = () => (
         <Box align="center" my={4}>
           <Button
             as={NextLink}
-            href="/works"
+            href="/projects"
             scroll={false}
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
