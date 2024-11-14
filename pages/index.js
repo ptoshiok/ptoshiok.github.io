@@ -32,15 +32,15 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie app developer based in Japan!
+        Hello, I&apos;m a Brazilian Backend Software Engineer!
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Paulo Toshio Kitayama
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Software Engineer</p>
         </Box>
         <Box
           flexShrink={0}
@@ -59,7 +59,7 @@ const Home = () => (
             overflow="hidden"
           >
             <Image
-              src="/images/takuya.jpg"
+              src="/images/ptoshiok.jpg"
               alt="Profile image"
               width="100"
               height="100"
@@ -73,26 +73,9 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
-            Inkdrop
-          </Link>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <Link
-            as={NextLink}
-            href="https://www.youtube.com/devaslife"
-            passHref
-            target="_blank"
-          >
-            Dev as Life
-          </Link>
-          &quot; has more than 100k subscribers.
+          I'm a fullstack software engineer working with fintech products but very
+          interested in Backend engineering. I live in Campinas, and I love lifting 
+          weights, playing badminton, studying japanese and music of all kinds.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -102,17 +85,17 @@ const Home = () => (
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            My portfolio
+            Things I'm working on
           </Button>
         </Box>
       </Section>
 
-      <Section delay={0.2}>
+      {/* <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
+          <BioYear>2001</BioYear>
           Born in Osaka (大阪), Japan.
         </BioSection>
         <BioSection>
@@ -129,42 +112,34 @@ const Home = () => (
           <BioYear>2012 to present</BioYear>
           Working as a freelancer
         </BioSection>
-      </Section>
+      </Section> */}
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          Interests
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          Art, Music, Playing Drums, Leica, Machine Learning
         </Paragraph>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          On the web
+          Websites
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/ptoshiok" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @ptoshiok
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
+          {/* <ListItem>
             <Link href="https://twitter.com/inkdrop_app" target="_blank">
               <Button
                 variant="ghost"
@@ -174,8 +149,8 @@ const Home = () => (
                 @inkdrop_app (English)
               </Button>
             </Link>
-          </ListItem>
-          <ListItem>
+          </ListItem> */}
+          {/* <ListItem>
             <Link href="https://twitter.com/craftzdog" target="_blank">
               <Button
                 variant="ghost"
@@ -185,56 +160,19 @@ const Home = () => (
                 @craftzdog (日本語)
               </Button>
             </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
+          </ListItem> */}
+          {/* <ListItem>
+            <Link href="https://instagram.com/paulo.tk" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoInstagram />}
               >
-                @craftzdog
+                @paulo.tk
               </Button>
             </Link>
-          </ListItem>
+          </ListItem> */}
         </List>
-
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;200k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid>
-
-        <Heading as="h3" variant="section-title">
-          Newsletter
-        </Heading>
-        <p>
-          Join me on a behind-the-scenes coding journey. Weekly updates on
-          projects, tutorials, and videos
-        </p>
-
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="https://www.devas.life/"
-            scroll={false}
-            leftIcon={<EmailIcon />}
-            colorScheme="teal"
-          >
-            Sign up my newsletter here
-          </Button>
-        </Box>
       </Section>
     </Container>
   </Layout>
