@@ -35,7 +35,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Paulo Toshio Kitayama
           </Heading>
-          <p>Software Engineer</p>
+          <p>Software Engineer, BSc in Applied and Computational Mathematics</p>
         </Box>
         <Box
           flexShrink={0}
@@ -69,7 +69,8 @@ const Home = () => (
         </Heading>
         <Paragraph>
           I&apos;m a fullstack software engineer working with fintech products but very
-          interested in Backend engineering. I live in Campinas, and I love lifting 
+          interested in Backend engineering. I have a bachelor&apos;s in Applied and
+          Computational Mathematics and I live in Campinas. I love lifting 
           weights, playing badminton, studying japanese and music of all kinds.
         </Paragraph>
         <Box align="center" my={4}>
@@ -135,6 +136,17 @@ const Home = () => (
             </Link>
           </ListItem>
         </List>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Original
+        </Heading>
+        <Paragraph>
+            The page that originated this website was created by Takuya Matsuyama:{' '} 
+          <Link href="https://www.craftz.dog/">craftz.dog</Link>. 
+          The repository can be found <Link href="https://github.com/craftzdog/craftzdog-homepage">here</Link>.
+        </Paragraph>
       </Section>
     </Container>
   </Layout>
