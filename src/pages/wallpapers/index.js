@@ -4,8 +4,8 @@ import Layout from '../../components/layouts/article'
 import Section from '../../components/section'
 import { WorkGridItem } from '../../components/grid-item'
 
-import thumbCherryBlossoms from '../../public/images/wallpapers/cherry-blossoms/ls-13.jpg'
-import thumbMachiya from '../../public/images/wallpapers/machiya/ls-03.jpg'
+import thumbCherryBlossoms from '../../../public/images/wallpapers/cherry-blossoms/ls-13.jpg'
+import thumbMachiya from '../../../public/images/wallpapers/machiya/ls-03.jpg'
 
 const Wallpapers = () => (
   <Layout title="Wallpaper Packs">

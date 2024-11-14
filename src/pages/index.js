@@ -53,12 +53,12 @@ const Home = () => (
             borderRadius="full"
             overflow="hidden"
           >
-            <Image
-              src="/images/ptoshiok.jpg"
-              alt="Profile image"
-              width="100"
-              height="100"
-            />
+              <Image
+                src="/images/ptoshiok_quadrado.jpg"
+                alt="Profile image"
+                width="100"
+                height="100"
+              />
           </Box>
         </Box>
       </Box>

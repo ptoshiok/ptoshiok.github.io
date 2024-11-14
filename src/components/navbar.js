@@ -1,23 +1,23 @@
-import { forwardRef } from 'react'
-import Logo from './logo'
-import NextLink from 'next/link'
+import { HamburgerIcon } from '@chakra-ui/icons'
 import {
-  Container,
   Box,
-  Link,
-  Stack,
-  Heading,
+  Container,
   Flex,
+  Heading,
+  IconButton,
+  Link,
   Menu,
+  MenuButton,
   MenuItem,
   MenuList,
-  MenuButton,
-  IconButton,
+  Stack,
+  Text,
   useColorModeValue
 } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
-import ThemeToggleButton from './theme-toggle-button'
+import NextLink from 'next/link'
+import { forwardRef } from 'react'
 import { IoLogoGithub } from 'react-icons/io5'
+import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -65,7 +65,16 @@ const Navbar = props => {
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
-            <Logo />
+            <Link href="/" scroll={false}>
+              <Text
+                color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+                fontFamily='M PLUS Rounded 1c", sans-serif'
+                fontWeight="bold"
+                ml={3}
+              >
+                Home
+              </Text>
+          </Link>
           </Heading>
         </Flex>
 
@@ -78,15 +87,8 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
+            Projects
           </LinkItem>
-          <LinkItem href="/wallpapers" path={path}>
-            Wallpapers
-          </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem>
-          <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem>
           <LinkItem
             target="_blank"
             href="https://github.com/craftzdog/craftzdog-homepage"
