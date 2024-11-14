@@ -1,25 +1,20 @@
-import NextLink from 'next/link'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import {
-  Link,
+  Box,
+  Button,
   Container,
   Heading,
-  Box,
-  SimpleGrid,
-  Button,
+  Link,
   List,
   ListItem,
   useColorModeValue
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
-import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
+import NextLink from 'next/link'
+import { IoLogoGithub } from 'react-icons/io5'
+import Layout from '../components/layouts/article'
+import Paragraph from '../components/paragraph'
+import Section from '../components/section'
 
 const Home = () => (
   <Layout>
@@ -73,7 +68,7 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          I'm a fullstack software engineer working with fintech products but very
+          I&apos;m a fullstack software engineer working with fintech products but very
           interested in Backend engineering. I live in Campinas, and I love lifting 
           weights, playing badminton, studying japanese and music of all kinds.
         </Paragraph>
@@ -85,7 +80,7 @@ const Home = () => (
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            Things I'm working on
+            Things I&apos;m working on
           </Button>
         </Box>
       </Section>
@@ -119,7 +114,7 @@ const Home = () => (
           Interests
         </Heading>
         <Paragraph>
-          Art, Music, Playing Drums, Leica, Machine Learning
+          Golang, Deep Learning, Hyperkamiokande, neutrinos, Japanese language, TWICE
         </Paragraph>
       </Section>
 
@@ -139,39 +134,6 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
-          {/* <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem> */}
-          {/* <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem> */}
-          {/* <ListItem>
-            <Link href="https://instagram.com/paulo.tk" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
-              >
-                @paulo.tk
-              </Button>
-            </Link>
-          </ListItem> */}
         </List>
       </Section>
     </Container>
