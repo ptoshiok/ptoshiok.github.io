@@ -1,6 +1,6 @@
 # Toshio's Homepage
 
-[https://www.ptoshiok.github.io/](https://www.ptoshiok.github.io/)
+[https://ptoshiok.github.io/](https://ptoshiok.github.io/)
 
 ## Stack
 
