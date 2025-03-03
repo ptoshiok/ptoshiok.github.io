@@ -68,10 +68,7 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          I&apos;m a fullstack software engineer working with fintech products but very
-          interested in Backend engineering. I have a bachelor&apos;s in Applied and
-          Computational Mathematics and I live in Campinas. I love lifting 
-          weights, playing badminton, studying japanese and music of all kinds.
+          I&apos;m a backend software engineer working in Safety and Insurance at Uber. I have a bachelor&apos;s degree in Applied and Computational Mathematics from Unicamp and I live in São Paulo. I love particle physics, the japanese language and reading.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
@@ -81,7 +78,7 @@ const Home = () => (
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            Things I&apos;m working on
+            Projects I&apos;m working on
           </Button>
         </Box>
       </Section>
@@ -115,7 +112,7 @@ const Home = () => (
           Interests
         </Heading>
         <Paragraph>
-          Golang, Deep Learning, Hyperkamiokande, neutrinos, Japanese language, TWICE
+          Golang, Hyperkamiokande, neutrinos, Japanese language, Pokémon
         </Paragraph>
       </Section>
 
